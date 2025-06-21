@@ -99,6 +99,10 @@ def add_article():
         return redirect('/articles')
     return render_template('add_article.html')
 
+@app.route('/lol', methods=['GET', 'POST'])
+def lol():
+    ...
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
