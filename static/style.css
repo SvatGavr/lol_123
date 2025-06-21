@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    background: black;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    margin-left: 50px;
+}
+
+.menu {
+    display: flex;
+    background-color: black;
+}
+
+.menu li {
+    list-style: none;
+    padding: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 30px;
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+    background: black;
+    color: white;
+    margin-top: 30px;
+}
+
+.logo {
+    background-image: url("aleksandr.jpg");
+    background-size: cover;
+    text-align: center;
+    height: 600px;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 70px;
+    padding-top: 150px;
+    background: transparent;
+}
+
+.logo p {
+    padding-top: 100px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    background: transparent;
+}
+
+h2.login {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: 0 auto 50px;
+    gap: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+form p {
+    align-self: flex-start;
+    margin: 0;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+select option {
+    font-size: 18px;
+    color: black;
+    background-color: white;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.form-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.article_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    padding: 30px;
+    background-color: black;
+}
+
+.articles {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 12px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article_title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.article_text {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 12px;
+}
+
+.article_continent {
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    color: gray;
+}
+
+.article img,
+.details-page .details-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-bottom: 15px;
+}
+.details-page .details-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    background-color: #121212;
+    border: 2px solid white;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 0 15px #00bcd4;
+}
+
+.details-page .details-title {
+    font-size: 48px;
+    text-align: center;
+    color: #00bcd4;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px #00838f;
+}
+
+.details-page .details-text {
+    font-size: 20px;
+    line-height: 27px;
+    text-align: justify;
+    margin-bottom: 25px;
+    color: #e0e0e0;
+}
+
+.details-page .details-continent {
+    font-style: italic;
+    font-size: 18px;
+    color: #80deea;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.details-page .back-link {
+    display: block;
+    width: 140px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #00bcd4;
+    text-decoration: none;
+    border: 1.5px solid #00bcd4;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.details-page .back-link:hover {
+    background-color: #00bcd4;
+    color: black;
+}
+
+.details-page .no-image {
+    color: gray;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+a:visited {
+    color: white;
+}
+
+.message-error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,42 @@
+{% extends 'basic.html'%}
+{% block header %}
+        <li><a href="/ ">Головна </a></li>
+        <li><a href="/articles">Цікаві місця</a></li>
+        <li><a href="/login">Увійти</a></li>
+        <li><a href="/register">Реєстрація</a></li>
+{% endblock %}
+
+{% block main %}
+<h2 class="login">Додати статтю</h2>
+<form action="/add_article" method="post" >
+  <p class="log_text">Заголовок статті</p>
+  <input class="article"  type="text" name="title"  required>
+  <p class="log_text">Текст </p>
+  <input class="article_text_add" type="text" name="text"  required>
+  <p class="log_text">Зображення url</p>
+  <input class="article" type="url" name="image"  required>
+  <p class="log_text">Континент</p>
+  <select class="option" name="continent" required>
+      <option>Africa</option>
+      <option>Asia</option>
+      <option>Europe</option>
+      <option>North America</option>
+      <option>South America</option>
+      <option>Australia</option>
+      <option>Antarctica</option>
+
+  </select>
+  <div class="button_container">
+    <button class="button_article" type="submit">Додати</button>
+    <button class="button_article" type="reset">Очистити</button>
+  </div>
+</form>
+{% endblock %}
+
+{% block footer%}
+    <ul>
+      <li>Copyright © 1999-2020 Ctrip.com (Hong Kong) Limited. All rights reserved.</li>
+      <li>Site Operator: Ctrip.com (Hong Kong) Limited</li>
+      <li>Hong Kong Travel License No. 352367</li>
+    </ul>
+{% endblock %}

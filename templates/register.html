@@ -1,0 +1,30 @@
+{% extends 'basic.html' %}
+
+{% block header %}
+    <li><a href="/">головна</a></li>
+    <li><a href="/login">ввійти</a></li>
+    <li><a href="/articles">цікаві місця</a></li>
+    <li><a href="/add_article">Статті</a></li>
+{% endblock %}
+
+{% block main %}
+<h2 class="register">Створіть свій акаунт</h2>
+{% if message %}
+<p class="message-error">{{ message }}</p>
+{% endif %}
+<form action="/register" method="post" name="register">
+    <p>Login</p>
+    <input type="text" name="login" placeholder="введіть логін" required>
+
+    <p>Password</p>
+    <input type="password" name="password" minlength="3" placeholder="Введіть пароль" required>
+
+    <p>Confirm Password</p>
+    <input type="password" name="confirm_password" minlength="3" placeholder="Підтвердіть пароль" required>
+
+    <button type="submit">Зареєструватись</button>
+</form>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
